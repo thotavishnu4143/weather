@@ -1,110 +1,97 @@
 <!doctype html>
 <html>
 <head>
-<title>Weather Forecasting</title>
-<style>
-body {
-    background-image: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D");
-    margin: 0;
-    background-size: cover;
-    padding: 0;
-    display: flex;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-}
-h1 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 40px;
-    color: white;
-    text-align: center;
-}
-
-.container {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 5px solid black;
-    border-radius: 20px;
-    text-align: center;
-    width: 18%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-input {
-    display: block;
-    margin: 15px auto;
-    padding: 10px;
-    width: 50%;
-    border: 3px solid black;
-    border-radius: 20px;
-}
-
-button {
-    padding: 10px 10px;
-    width: auto;
-    background-color: skyblue;
-    color: black;
-    border: 3px solid black;
-    border-radius: 20px;
-    margin: 10px auto;
-}
-
-.weather-result {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.current-weather-box {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    width: auto;
-}
-
-.weather-box {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0 5px;
-    width: 17%;
-    height: auto; 
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.weather-box h2 {
-    margin-bottom: 5px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.weather-box p {
-    margin: 4px 0;
-    font-size: 16px;
-}
-
-.weather-box img {
-    margin-top: 10px;
-    width: 60px; 
-    height: 60px; 
-}
-</style>
+    <title>Weather Forecasting</title>
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D");
+            margin: 0;
+            background-size: cover;
+            padding: 0;
+            display: flex;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 5px solid black;
+            border-radius: 20px;
+            text-align: center;
+            width: 18%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        input {
+            display: block;
+            margin: 15px auto;
+            padding: 10px;
+            width: 50%;
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+        button {
+            padding: 10px 10px;
+            width: auto;
+            background-color: skyblue;
+            color: black;
+            border: 3px solid black;
+            border-radius: 20px;
+            margin: 10px auto;
+        }
+        .weather-result {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .current-weather-box, .weather-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .current-weather-box {
+            width: auto;
+            margin-bottom: 20px;
+        }
+        .weather-box {
+            margin: 0 5px;
+            width: 17%;
+            height: auto;
+        }
+        .weather-box h2 {
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .weather-box p {
+            margin: 4px 0;
+            font-size: 16px;
+        }
+        .weather-box img {
+            margin-top: 10px;
+            width: 60px;
+            height: 60px;
+        }
+    </style>
 </head>
 <body>
     <h1 id="mainHeading">Weather Forecasting</h1> 
